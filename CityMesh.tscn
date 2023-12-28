@@ -1,0 +1,412 @@
+[gd_scene load_steps=43 format=3 uid="uid://bwte2sy30x6gh"]
+
+[ext_resource type="Material" uid="uid://ce5sklnocm4bt" path="res://Assets/PolygonSciFiCity/Materials/Misc/Road.material" id="1_c0ero"]
+[ext_resource type="ArrayMesh" uid="uid://bhbgluvgpx2ka" path="res://Assets/PolygonSciFiCity/Models/extracted/SM_Env_Road_Arrow_01_SF.SM_Env_Road_Arrow_01_SF.mesh" id="2_oqj5d"]
+[ext_resource type="ArrayMesh" uid="uid://l81ywy1spogh" path="res://Assets/PolygonSciFiCity/Models/extracted/SM_Env_Road_Arrow_02_SF.SM_Env_Road_Arrow_02_SF.mesh" id="3_2x1b6"]
+[ext_resource type="ArrayMesh" uid="uid://bxe1rxs8lg5f" path="res://Assets/PolygonSciFiCity/Models/extracted/SM_Env_Road_Bare_Half_01_SF.SM_Env_Road_Bare_Half_01_SF.mesh" id="4_8pe8u"]
+[ext_resource type="ArrayMesh" uid="uid://vjtqe1qwbq11" path="res://Assets/PolygonSciFiCity/Models/extracted/SM_Env_Road_Crossing_01_SF.SM_Env_Road_Crossing_01_SF.mesh" id="5_pi50q"]
+[ext_resource type="ArrayMesh" uid="uid://ryl1bwvre4fh" path="res://Assets/PolygonSciFiCity/Models/extracted/SM_Env_Road_Crossing_02_SF.SM_Env_Road_Crossing_02_SF.mesh" id="6_viwjw"]
+[ext_resource type="ArrayMesh" uid="uid://b2v2u6a5g6bew" path="res://Assets/PolygonSciFiCity/Models/extracted/SM_Env_Road_Lines_01_Corner_01.SM_Env_Road_Lines_01_Corner_01.mesh" id="7_h207d"]
+[ext_resource type="ArrayMesh" uid="uid://jmemdk0x1nx5" path="res://Assets/PolygonSciFiCity/Models/extracted/SM_Env_Road_Lines_01_Corner_02.SM_Env_Road_Lines_01_Corner_02.mesh" id="8_ml714"]
+[ext_resource type="ArrayMesh" uid="uid://cb5c77rib6l2m" path="res://Assets/PolygonSciFiCity/Models/extracted/SM_Env_Road_Lines_01_SF.SM_Env_Road_Lines_01_SF.mesh" id="9_jmb1p"]
+[ext_resource type="ArrayMesh" uid="uid://ci7cnnovvvcik" path="res://Assets/PolygonSciFiCity/Models/extracted/SM_Env_Road_Lines_02_Corner_01.SM_Env_Road_YellowLines_01_Corner_01.mesh" id="10_p3vph"]
+[ext_resource type="ArrayMesh" uid="uid://b43qp86n0ti6q" path="res://Assets/PolygonSciFiCity/Models/extracted/SM_Env_Road_Lines_02_Corner_02.SM_Env_Road_YellowLines_01_Corner_02.mesh" id="11_kb27c"]
+[ext_resource type="ArrayMesh" uid="uid://bhuhr88v0txjw" path="res://Assets/PolygonSciFiCity/Models/extracted/SM_Env_Road_Lines_02_SF.SM_Env_Road_Lines_02_SF.mesh" id="12_llcxa"]
+[ext_resource type="ArrayMesh" uid="uid://4vkn5k3vuh2u" path="res://Assets/PolygonSciFiCity/Models/extracted/SM_Env_Road_Median_01_SF.SM_Env_Road_Median_01_SF.mesh" id="13_oy0er"]
+[ext_resource type="ArrayMesh" uid="uid://bfluxhgo1r4k3" path="res://Assets/PolygonSciFiCity/Models/extracted/SM_Env_Road_Median_02_SF.SM_Env_Road_Median_02_SF.mesh" id="14_i3xfh"]
+[ext_resource type="ArrayMesh" uid="uid://e7ucseprhpqe" path="res://Assets/PolygonSciFiCity/Models/extracted/SM_Env_Road_ParkingLines_01_SF.SM_Env_Road_ParkingLines_01_SF.mesh" id="15_4hmil"]
+[ext_resource type="ArrayMesh" uid="uid://tfwv471p3o1t" path="res://Assets/PolygonSciFiCity/Models/extracted/SM_Env_Road_YellowLines_01_SF.SM_Env_Road_YellowLines_01_SF.mesh" id="16_fja8u"]
+[ext_resource type="ArrayMesh" uid="uid://dm4mlqve3on3m" path="res://Assets/PolygonSciFiCity/Models/extracted/SM_Env_Road_YellowLines_02_SF.SM_Env_Road_YellowLines_02_SF.mesh" id="17_0umwx"]
+[ext_resource type="ArrayMesh" uid="uid://cblks7lueoaal" path="res://Assets/PolygonSciFiCity/Models/extracted/SM_Env_Sidewalk_03_SF.SM_Env_Sidewalk_03_SF.mesh" id="18_omlvs"]
+[ext_resource type="ArrayMesh" uid="uid://dc0d631a5u1w0" path="res://Assets/PolygonSciFiCity/Models/extracted/SM_Env_Sidewalk_Corner_01_SF.SM_Env_Sidewalk_Corner_01_SF.mesh" id="19_yh0w3"]
+[ext_resource type="ArrayMesh" uid="uid://r4cvydeg1xeg" path="res://Assets/PolygonSciFiCity/Models/extracted/SM_Env_Sidewalk_Corner_02_SF.SM_Env_Sidewalk_Corner_02_SF.mesh" id="20_ng12t"]
+[ext_resource type="ArrayMesh" uid="uid://crnqj4lbnq47l" path="res://Assets/PolygonSciFiCity/Models/extracted/SM_Env_Sidewalk_Corner_Half_01.SM_Env_Sidewalk_Corner_Half_01.mesh" id="21_hp2fp"]
+[ext_resource type="ArrayMesh" uid="uid://dpv151cnxkt5s" path="res://Assets/PolygonSciFiCity/Models/extracted/SM_Env_Sidewalk_Corner_Half_01_SF.SM_Env_Sidewalk_Corner_Half_01_SF.mesh" id="22_4bfa3"]
+[ext_resource type="ArrayMesh" uid="uid://dvwj7j6fk5x44" path="res://Assets/PolygonSciFiCity/Models/extracted/SM_Env_Sidewalk_Grate_02_SF.SM_Env_Sidewalk_Grate_02_SF.mesh" id="23_jrsta"]
+[ext_resource type="ArrayMesh" uid="uid://d0l28rvskuoxm" path="res://Assets/PolygonSciFiCity/Models/extracted/SM_Env_Sidewalk_Merger_01_SF.SM_Env_Sidewalk_Merger_01_SF.mesh" id="24_rn5j2"]
+[ext_resource type="ArrayMesh" uid="uid://bikqbvcbwd2tp" path="res://Assets/PolygonSciFiCity/Models/extracted/SM_Env_Sidewalk_Merger_02_SF.SM_Env_Sidewalk_Merger_02_SF.mesh" id="25_6fgvb"]
+[ext_resource type="ArrayMesh" uid="uid://dkeiab6obe1k" path="res://Assets/PolygonSciFiCity/Models/extracted/SM_Env_Sidewalk_Merger_Half_01_SF.SM_Env_Sidewalk_Merger_Half_01_SF.mesh" id="26_5bkew"]
+[ext_resource type="ArrayMesh" uid="uid://bnka4oym7cauw" path="res://Assets/PolygonSciFiCity/Models/extracted/SM_Env_Sidewalk_Panel_01_SF.SM_Env_Sidewalk_Panel_01_SF.mesh" id="27_aphu2"]
+[ext_resource type="ArrayMesh" uid="uid://bo4hkceh50t08" path="res://Assets/PolygonSciFiCity/Models/extracted/SM_Env_Sidewalk_Raised_01.SM_Env_Sidewalk_Raised_01.mesh" id="28_kqbbn"]
+[ext_resource type="ArrayMesh" uid="uid://bi0b7bdirofdb" path="res://Assets/PolygonSciFiCity/Models/extracted/SM_Env_Sidewalk_Raised_02.SM_Env_Sidewalk_Raised_02.mesh" id="29_io2ks"]
+[ext_resource type="ArrayMesh" uid="uid://mu28jkhbnsap" path="res://Assets/PolygonSciFiCity/Models/extracted/SM_Env_Sidewalk_Straight_01_SF.SM_Env_Sidewalk_Straight_01_SF.mesh" id="30_2gftn"]
+[ext_resource type="ArrayMesh" uid="uid://rjtxnojklkdy" path="res://Assets/PolygonSciFiCity/Models/extracted/SM_Env_Sidewalk_Straight_02_SF.SM_Env_Sidewalk_Straight_02_SF.mesh" id="31_idcjy"]
+[ext_resource type="ArrayMesh" uid="uid://cf1ra764oy62i" path="res://Assets/PolygonSciFiCity/Models/extracted/SM_Env_Sidewalk_Straight_03_SF.SM_Env_Sidewalk_Straight_03_SF.mesh" id="32_efmld"]
+[ext_resource type="ArrayMesh" uid="uid://4pxnkl7llm5j" path="res://Assets/PolygonSciFiCity/Models/extracted/SM_Env_Sidewalk_Straight_04_SF.SM_Env_Sidewalk_Straight_04_SF.mesh" id="34_gw3kk"]
+[ext_resource type="ArrayMesh" uid="uid://f33nxxvou68u" path="res://Assets/PolygonSciFiCity/Models/extracted/SM_Env_Sidewalk_Straight_Half_01_SF.SM_Env_Sidewalk_Straight_Half_01_SF.mesh" id="35_kahsb"]
+[ext_resource type="ArrayMesh" uid="uid://cbod4gx4vlrlt" path="res://Assets/PolygonSciFiCity/Models/extracted/SM_Env_Sidewalk_01_SF.SM_Env_Sidewalk_01_SF.mesh" id="36_kwp3k"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_41w5a"]
+size = Vector3(5, 0.0391354, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jqa0w"]
+size = Vector3(5, 0.039, 2.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dob8t"]
+size = Vector3(10, 0, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2gtdj"]
+size = Vector3(2.47839, 0.0391354, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jo302"]
+size = Vector3(10, 0.0391354, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_huq3a"]
+size = Vector3(10, 0.0391354, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h2lcd"]
+size = Vector3(5, 0.0391354, 2.50146)
+
+[node name="CityMesh" type="Node3D"]
+
+[node name="Arrow01Sf" type="MeshInstance3D" parent="."]
+mesh = ExtResource("2_oqj5d")
+
+[node name="BoxCollider" type="StaticBody3D" parent="Arrow01Sf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Arrow01Sf/BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, -2.5)
+shape = SubResource("BoxShape3D_41w5a")
+
+[node name="Arrow02Sf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
+mesh = ExtResource("3_2x1b6")
+
+[node name="BoxCollider" type="StaticBody3D" parent="Arrow02Sf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Arrow02Sf/BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, -2.5)
+shape = SubResource("BoxShape3D_41w5a")
+
+[node name="BareHalf01Sf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 12)
+material_override = ExtResource("1_c0ero")
+mesh = ExtResource("4_8pe8u")
+
+[node name="BoxCollider" type="StaticBody3D" parent="BareHalf01Sf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BareHalf01Sf/BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, -1.25)
+shape = SubResource("BoxShape3D_jqa0w")
+
+[node name="Crossing01Sf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 18)
+material_override = ExtResource("1_c0ero")
+mesh = ExtResource("5_pi50q")
+
+[node name="BoxCollider" type="StaticBody3D" parent="Crossing01Sf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Crossing01Sf/BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, -2.5)
+shape = SubResource("BoxShape3D_41w5a")
+
+[node name="Crossing02Sf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+material_override = ExtResource("1_c0ero")
+mesh = ExtResource("6_viwjw")
+
+[node name="BoxCollider" type="StaticBody3D" parent="Crossing02Sf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Crossing02Sf/BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, -2.5)
+shape = SubResource("BoxShape3D_41w5a")
+
+[node name="Lines01Corner01" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 6)
+material_override = ExtResource("1_c0ero")
+mesh = ExtResource("7_h207d")
+
+[node name="BoxCollider" type="StaticBody3D" parent="Lines01Corner01"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Lines01Corner01/BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, -2.5)
+shape = SubResource("BoxShape3D_41w5a")
+
+[node name="Lines01Corner02" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 12)
+material_override = ExtResource("1_c0ero")
+mesh = ExtResource("8_ml714")
+
+[node name="BoxCollider" type="StaticBody3D" parent="Lines01Corner02"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Lines01Corner02/BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, -2.5)
+shape = SubResource("BoxShape3D_41w5a")
+
+[node name="Lines01Sf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 18)
+material_override = ExtResource("1_c0ero")
+mesh = ExtResource("9_jmb1p")
+
+[node name="BoxCollider" type="StaticBody3D" parent="Lines01Sf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Lines01Sf/BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, -2.5)
+shape = SubResource("BoxShape3D_41w5a")
+
+[node name="YellowLines01Corner01" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 0)
+material_override = ExtResource("1_c0ero")
+mesh = ExtResource("10_p3vph")
+
+[node name="BoxCollider" type="StaticBody3D" parent="YellowLines01Corner01"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="YellowLines01Corner01/BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, -2.5)
+shape = SubResource("BoxShape3D_41w5a")
+
+[node name="YellowLines01Corner02" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 6)
+material_override = ExtResource("1_c0ero")
+mesh = ExtResource("11_kb27c")
+
+[node name="BoxCollider" type="StaticBody3D" parent="YellowLines01Corner02"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="YellowLines01Corner02/BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, -2.5)
+shape = SubResource("BoxShape3D_41w5a")
+
+[node name="Lines02Sf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 12)
+material_override = ExtResource("1_c0ero")
+mesh = ExtResource("12_llcxa")
+
+[node name="BoxCollider" type="StaticBody3D" parent="Lines02Sf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Lines02Sf/BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, -2.5)
+shape = SubResource("BoxShape3D_41w5a")
+
+[node name="Median01Sf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 18)
+material_override = ExtResource("1_c0ero")
+mesh = ExtResource("13_oy0er")
+
+[node name="BoxCollider" type="StaticBody3D" parent="Median01Sf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Median01Sf/BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, -2.5)
+shape = SubResource("BoxShape3D_41w5a")
+
+[node name="Median02Sf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 0)
+material_override = ExtResource("1_c0ero")
+mesh = ExtResource("14_i3xfh")
+
+[node name="BoxCollider" type="StaticBody3D" parent="Median02Sf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Median02Sf/BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, -2.5)
+shape = SubResource("BoxShape3D_41w5a")
+
+[node name="ParkingLines01Sf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 6)
+mesh = ExtResource("15_4hmil")
+
+[node name="BoxCollider" type="StaticBody3D" parent="ParkingLines01Sf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ParkingLines01Sf/BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.92627, 0, -2.5)
+shape = SubResource("BoxShape3D_dob8t")
+
+[node name="YellowLines01Sf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 18)
+material_override = ExtResource("1_c0ero")
+mesh = ExtResource("16_fja8u")
+
+[node name="BoxCollider" type="StaticBody3D" parent="YellowLines01Sf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="YellowLines01Sf/BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, -2.5)
+shape = SubResource("BoxShape3D_41w5a")
+
+[node name="YellowLines02Sf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 12)
+material_override = ExtResource("1_c0ero")
+mesh = ExtResource("17_0umwx")
+
+[node name="BoxCollider" type="StaticBody3D" parent="YellowLines02Sf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="YellowLines02Sf/BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, -2.5)
+shape = SubResource("BoxShape3D_41w5a")
+
+[node name="Sidewalk03Sf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, 6)
+mesh = ExtResource("18_omlvs")
+
+[node name="BoxCollider" type="StaticBody3D" parent="Sidewalk03Sf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sidewalk03Sf/BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, -2.5)
+shape = SubResource("BoxShape3D_41w5a")
+
+[node name="SidewalkCorner01Sf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, 12)
+mesh = ExtResource("19_yh0w3")
+
+[node name="BoxCollider" type="StaticBody3D" parent="SidewalkCorner01Sf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SidewalkCorner01Sf/BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, -2.5)
+shape = SubResource("BoxShape3D_41w5a")
+
+[node name="SidewalkCorner02Sf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, 24)
+mesh = ExtResource("20_ng12t")
+
+[node name="BoxCollider" type="StaticBody3D" parent="SidewalkCorner02Sf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SidewalkCorner02Sf/BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, -2.5)
+shape = SubResource("BoxShape3D_41w5a")
+
+[node name="SidewalkCornerHalf01" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 0, 24)
+mesh = ExtResource("21_hp2fp")
+
+[node name="BoxCollider" type="StaticBody3D" parent="SidewalkCornerHalf01"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SidewalkCornerHalf01/BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.7608, 0, -2.5)
+shape = SubResource("BoxShape3D_2gtdj")
+
+[node name="SidewalkCornerHalf01Sf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 0, 0)
+mesh = ExtResource("22_4bfa3")
+
+[node name="BoxCollider" type="StaticBody3D" parent="SidewalkCornerHalf01Sf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SidewalkCornerHalf01Sf/BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, -2.5)
+shape = SubResource("BoxShape3D_41w5a")
+
+[node name="SidewalkGrate02Sf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 0, 6)
+mesh = ExtResource("23_jrsta")
+
+[node name="BoxCollider" type="StaticBody3D" parent="SidewalkGrate02Sf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SidewalkGrate02Sf/BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, -2.5)
+shape = SubResource("BoxShape3D_41w5a")
+
+[node name="SidewalkMerger01Sf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41, 0, 18)
+mesh = ExtResource("24_rn5j2")
+
+[node name="BoxCollider" type="StaticBody3D" parent="SidewalkMerger01Sf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SidewalkMerger01Sf/BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.5)
+shape = SubResource("BoxShape3D_jo302")
+
+[node name="SidewalkMerger02Sf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 53, 0, 18)
+mesh = ExtResource("25_6fgvb")
+
+[node name="BoxCollider" type="StaticBody3D" parent="SidewalkMerger02Sf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SidewalkMerger02Sf/BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.5)
+shape = SubResource("BoxShape3D_huq3a")
+
+[node name="SidewalkMergerHalf01Sf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48, 0, 0)
+mesh = ExtResource("26_5bkew")
+
+[node name="BoxCollider" type="StaticBody3D" parent="SidewalkMergerHalf01Sf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SidewalkMergerHalf01Sf/BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, -2.5)
+shape = SubResource("BoxShape3D_41w5a")
+
+[node name="SidewalkPanel01Sf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48, 0, 6)
+mesh = ExtResource("27_aphu2")
+
+[node name="BoxCollider" type="StaticBody3D" parent="SidewalkPanel01Sf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SidewalkPanel01Sf/BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, -2.5)
+shape = SubResource("BoxShape3D_41w5a")
+
+[node name="SidewalkRaised01" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48, 0, 12)
+mesh = ExtResource("28_kqbbn")
+
+[node name="BoxCollider" type="StaticBody3D" parent="SidewalkRaised01"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SidewalkRaised01/BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, -2.5)
+shape = SubResource("BoxShape3D_41w5a")
+
+[node name="SidewalkRaised02" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 0, 12)
+mesh = ExtResource("29_io2ks")
+
+[node name="BoxCollider" type="StaticBody3D" parent="SidewalkRaised02"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SidewalkRaised02/BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, -2.5)
+shape = SubResource("BoxShape3D_41w5a")
+
+[node name="SidewalkStraight01Sf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54, 0, 0)
+mesh = ExtResource("30_2gftn")
+
+[node name="BoxCollider" type="StaticBody3D" parent="SidewalkStraight01Sf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SidewalkStraight01Sf/BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, -2.5)
+shape = SubResource("BoxShape3D_41w5a")
+
+[node name="SidewalkStraight02Sf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54, 0, 6)
+mesh = ExtResource("31_idcjy")
+
+[node name="BoxCollider" type="StaticBody3D" parent="SidewalkStraight02Sf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SidewalkStraight02Sf/BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, -2.5)
+shape = SubResource("BoxShape3D_41w5a")
+
+[node name="SidewalkStraight03Sf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54, 0, 12)
+mesh = ExtResource("32_efmld")
+
+[node name="BoxCollider" type="StaticBody3D" parent="SidewalkStraight03Sf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SidewalkStraight03Sf/BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, -2.5)
+shape = SubResource("BoxShape3D_41w5a")
+
+[node name="SidewalkStraight04Sf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 0, 24)
+mesh = ExtResource("34_gw3kk")
+
+[node name="BoxCollider" type="StaticBody3D" parent="SidewalkStraight04Sf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SidewalkStraight04Sf/BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, -2.5)
+shape = SubResource("BoxShape3D_41w5a")
+
+[node name="SidewalkStraightHalf01Sf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54, 0, 24)
+mesh = ExtResource("35_kahsb")
+
+[node name="BoxCollider" type="StaticBody3D" parent="SidewalkStraightHalf01Sf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SidewalkStraightHalf01Sf/BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, -3.74927)
+shape = SubResource("BoxShape3D_h2lcd")
+
+[node name="Sidewalk01Sf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, 0)
+mesh = ExtResource("36_kwp3k")
+
+[node name="BoxCollider" type="StaticBody3D" parent="Sidewalk01Sf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sidewalk01Sf/BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, -2.5)
+shape = SubResource("BoxShape3D_41w5a")

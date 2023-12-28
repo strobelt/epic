@@ -1,16 +1,19 @@
-[gd_scene load_steps=15 format=3 uid="uid://dgq714g1d0jni"]
+[gd_scene load_steps=19 format=3 uid="uid://dgq714g1d0jni"]
 
 [ext_resource type="PackedScene" uid="uid://2vuooegu7y23" path="res://Assets/PolygonSciFiCity/Models/SM_Veh_Armored_Truck_01.gltf" id="1_0uxci"]
 [ext_resource type="Texture2D" uid="uid://0xtpexhccw21" path="res://Assets/PolygonSciFiCity/Textures/SimpleSky.png" id="1_pph0t"]
 [ext_resource type="PackedScene" uid="uid://vll005w0yas8" path="res://Assets/PolygonSciFiCity/Models/SM_Veh_Hover_Bike_01.gltf" id="2_3fagp"]
-[ext_resource type="PackedScene" uid="uid://cey4r20mely15" path="res://Assets/PolygonSciFiCity/Prefabs/Roads/SM_Env_Road_YellowLines_01_SF.prefab.scn" id="3_c1knw"]
-[ext_resource type="PackedScene" uid="uid://dpjjv56f30kkn" path="res://Assets/PolygonSciFiCity/Prefabs/Roads/SM_Env_Road_YellowLines_02_SF.prefab.scn" id="4_knt1c"]
-[ext_resource type="PackedScene" uid="uid://gi1ih6r2tlvi" path="res://Assets/PolygonSciFiCity/Prefabs/Environments/SM_Env_Sidewalk_Straight_01_SF.prefab.scn" id="5_jk2je"]
-[ext_resource type="PackedScene" uid="uid://ch6locy07lxlf" path="res://Assets/PolygonSciFiCity/Prefabs/Environments/SM_Env_Sidewalk_Straight_04_SF.prefab.scn" id="6_jasw6"]
-[ext_resource type="PackedScene" uid="uid://cpf3lm4r514a1" path="res://Assets/PolygonSciFiCity/Prefabs/Environments/SM_Env_Sidewalk_Straight_03_SF.prefab.scn" id="7_oktsl"]
+[ext_resource type="PackedScene" uid="uid://dmve388yoh6gv" path="res://Assets/PolygonSciFiCity/Prefabs/Buildings/SM_Bld_Section_Window_04.prefab.scn" id="5_fvo25"]
+[ext_resource type="PackedScene" uid="uid://bnm2te8oekvri" path="res://Assets/PolygonSciFiCity/Prefabs/Buildings/SM_Bld_Chopshop_01.prefab.scn" id="8_nagoh"]
 [ext_resource type="PackedScene" uid="uid://bs2hxh5hwpjjh" path="res://Assets/PolygonSciFiCity/Prefabs/Buildings/SM_Bld_Bank_01.prefab.scn" id="8_tvlil"]
 [ext_resource type="PackedScene" uid="uid://b0681gkp2kw28" path="res://Assets/PolygonSciFiCity/Prefabs/Environments/SkyDome.prefab.scn" id="9_1f3b3"]
+[ext_resource type="PackedScene" uid="uid://ctkb2qnob3cou" path="res://Assets/PolygonSciFiCity/Prefabs/Buildings/SM_Bld_Chopshop_Interior_01.prefab.scn" id="9_4e4ic"]
 [ext_resource type="PackedScene" uid="uid://bwa45cpoktiww" path="res://Scenes/player.tscn" id="10_d5i3k"]
+[ext_resource type="PackedScene" uid="uid://mhf7e6cgxcy" path="res://Assets/PolygonSciFiCity/Prefabs/Buildings/SM_Bld_Section_Corner_03.prefab.scn" id="10_gio2m"]
+[ext_resource type="PackedScene" uid="uid://c5wnuum2hjx2n" path="res://Assets/PolygonSciFiCity/Prefabs/Buildings/SM_Bld_Section_Corner_01.prefab.scn" id="11_lesoi"]
+[ext_resource type="PackedScene" uid="uid://dxf3mcxlqtd8e" path="res://Assets/PolygonSciFiCity/Prefabs/Buildings/SM_Bld_Section_Window_01.prefab.scn" id="12_d72jx"]
+[ext_resource type="MeshLibrary" uid="uid://cr0eerq7w7csw" path="res://CityRoads.tres" id="12_gferx"]
+[ext_resource type="PackedScene" uid="uid://1kiika2bkqg5" path="res://Assets/PolygonSciFiCity/Prefabs/Buildings/SM_Bld_Underpass_01.prefab.scn" id="13_2kuq4"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_xaj82"]
 sky_top_color = Color(0.847059, 0.886275, 1, 1)
@@ -31,6 +34,9 @@ ssao_enabled = true
 sdfgi_enabled = true
 glow_enabled = true
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_mn0uc"]
+size = Vector3(5, 0.0391354, 5)
+
 [node name="Node3D" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -43,63 +49,25 @@ light_energy = 0.0
 shadow_enabled = true
 
 [node name="SM_Veh_Armored_Truck_01" parent="." instance=ExtResource("1_0uxci")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 13.3828, -2.34693e-07, 6.34358)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6.48926, -2.34693e-07, 6.34358)
 
 [node name="SM_Veh_Hover_Bike_01" parent="." instance=ExtResource("2_3fagp")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.671621, 3.72529e-09, 9.6699)
 
-[node name="Roads" type="Node3D" parent="."]
-
-[node name="SM_Env_Road_YellowLines_01_SF" parent="Roads" instance=ExtResource("3_c1knw")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 5.93739, 0, 6.06044)
-
-[node name="SM_Env_Road_YellowLines_02_SF" parent="Roads" instance=ExtResource("4_knt1c")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 5.93739, 0, 1.06044)
-
-[node name="SM_Env_Road_YellowLines_01_SF2" parent="Roads" instance=ExtResource("3_c1knw")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.937391, 0, 6.06044)
-
-[node name="SM_Env_Road_YellowLines_02_SF2" parent="Roads" instance=ExtResource("4_knt1c")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.937, 0, 1.06)
-
-[node name="SM_Env_Road_YellowLines_01_SF3" parent="Roads" instance=ExtResource("3_c1knw")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4.06261, 0, 6.06044)
-
-[node name="SM_Env_Road_YellowLines_02_SF3" parent="Roads" instance=ExtResource("4_knt1c")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4.06261, 0, 1.06044)
-
-[node name="SM_Env_Road_YellowLines_01_SF4" parent="Roads" instance=ExtResource("3_c1knw")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -9.06261, 0, 6.06044)
-
-[node name="SM_Env_Road_YellowLines_02_SF4" parent="Roads" instance=ExtResource("4_knt1c")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -9.06261, 0, 1.06044)
-
-[node name="SM_Env_Road_YellowLines_01_SF5" parent="Roads" instance=ExtResource("3_c1knw")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10.9374, 0, 6.06044)
-
-[node name="SM_Env_Road_YellowLines_02_SF5" parent="Roads" instance=ExtResource("4_knt1c")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10.9374, 0, 1.06044)
-
-[node name="SM_Env_Road_YellowLines_01_SF6" parent="Roads" instance=ExtResource("3_c1knw")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 15.9374, 0, 6.06044)
-
-[node name="SM_Env_Road_YellowLines_02_SF6" parent="Roads" instance=ExtResource("4_knt1c")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 15.9374, 0, 1.06044)
-
-[node name="SM_Env_Sidewalk_Straight_01_SF" parent="." instance=ExtResource("5_jk2je")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.93739, 0, 1.06044)
-
-[node name="SM_Env_Sidewalk_Straight_01_SF3" parent="." instance=ExtResource("5_jk2je")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.06261, 0, 1.06044)
-
-[node name="SM_Env_Sidewalk_Straight_04_SF" parent="." instance=ExtResource("6_jasw6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.06261, 0, 1.06044)
-
-[node name="SM_Env_Sidewalk_Straight_03_SF" parent="." instance=ExtResource("7_oktsl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.937391, 0, 1.06044)
-
 [node name="SM_Bld_Bank_01" parent="." instance=ExtResource("8_tvlil")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -3.54999)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.77332, 0.1, -5.12559)
+
+[node name="BoxCollider" type="StaticBody3D" parent="SM_Bld_Bank_01"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Bld_Bank_01/BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, -0.0195677, -2.5)
+shape = SubResource("BoxShape3D_mn0uc")
+
+[node name="SM_Bld_Section_Window_04" parent="SM_Bld_Bank_01" instance=ExtResource("5_fvo25")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.147329, 3, 0)
+
+[node name="SM_Bld_Section_Window_05" parent="SM_Bld_Bank_01" instance=ExtResource("5_fvo25")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 5.14733, 3, -4.61918)
 
 [node name="SkyDome" parent="." instance=ExtResource("9_1f3b3")]
 transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
@@ -113,3 +81,32 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9647, -2.34693e-07, 0.13517
 
 [node name="Camera3D" type="Camera3D" parent="CameraPivot"]
 transform = Transform3D(1, 0, 0, 0, 0.5, 0.866025, 0, -0.866025, 0.5, 0, 5, 2)
+
+[node name="GridMap" type="GridMap" parent="."]
+mesh_library = ExtResource("12_gferx")
+cell_size = Vector3(5, 0.1, 5)
+cell_center_x = false
+cell_center_y = false
+cell_center_z = false
+bake_navigation = true
+data = {
+"cells": PackedInt32Array(65533, 0, 1441807, 65534, 0, 1441807, 65535, 0, 1441807, 0, 0, 1441807, 1, 0, 1441807, 2, 0, 1441807, 3, 0, 1441807, 4, 0, 1441807, 5, 0, 1441807, 6, 0, 1441807, 65533, 1, 1441806, 65534, 1, 1441806, 65535, 1, 1441806, 0, 1, 1441806, 1, 1, 1441806, 2, 1, 1441806, 3, 1, 1441806, 4, 1, 1441806, 5, 1, 1441806, 6, 1, 1441806, 7, 1, 1441806, 131070, 0, 29, 65542, 0, 31, 65541, 0, 29, 65540, 0, 28, 65539, 0, 29, 65538, 0, 29, 65537, 0, 28, 65536, 0, 29, 131071, 0, 29, 131069, 0, 17, 131069, 65534, 1441821, 131069, 65533, 1441823, 131069, 65532, 1441821, 131069, 65531, 1441821, 131070, 65535, 33, 131070, 65534, 33, 131070, 65532, 33, 131070, 65533, 33, 65542, 65535, 33, 65541, 65535, 33, 65540, 65535, 33, 65539, 65535, 33, 65538, 65535, 33, 65537, 65535, 33, 65536, 65535, 33, 65536, 65534, 33, 131071, 65534, 33, 131071, 65535, 33, 65537, 65534, 33, 65538, 65534, 33, 65539, 65534, 33, 65539, 65533, 33, 65540, 65533, 33, 65541, 65533, 33, 65542, 65533, 33, 65542, 65534, 33, 65541, 65534, 33, 65540, 65534, 33, 65538, 65533, 33, 65537, 65532, 33, 65537, 65533, 33, 65536, 65533, 33, 131071, 65533, 33, 131071, 65532, 33, 65536, 65532, 33, 65538, 65532, 33, 65539, 65532, 33, 65540, 65532, 33, 65541, 65532, 33, 65542, 65532, 33)
+}
+metadata/_editor_floor_ = Vector3(0, 1, 0)
+
+[node name="SM_Bld_Chopshop_01" parent="." instance=ExtResource("8_nagoh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.38513, 0.1, -5.00696)
+
+[node name="SM_Bld_Chopshop_Interior_01" parent="SM_Bld_Chopshop_01" instance=ExtResource("9_4e4ic")]
+
+[node name="SM_Bld_Section_Corner_03" parent="." instance=ExtResource("10_gio2m")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -9.94939, 0.1, -10.068)
+
+[node name="SM_Bld_Section_Corner_01" parent="SM_Bld_Section_Corner_03" instance=ExtResource("11_lesoi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+
+[node name="SM_Bld_Section_Window_01" parent="." instance=ExtResource("12_d72jx")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -9.75523, 0.1, -15.0485)
+
+[node name="SM_Bld_Underpass_01" parent="." instance=ExtResource("13_2kuq4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3193, 0.131374, -4.98786)
