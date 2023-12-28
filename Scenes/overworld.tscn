@@ -1,0 +1,115 @@
+[gd_scene load_steps=15 format=3 uid="uid://dgq714g1d0jni"]
+
+[ext_resource type="PackedScene" uid="uid://2vuooegu7y23" path="res://Assets/PolygonSciFiCity/Models/SM_Veh_Armored_Truck_01.gltf" id="1_0uxci"]
+[ext_resource type="Texture2D" uid="uid://0xtpexhccw21" path="res://Assets/PolygonSciFiCity/Textures/SimpleSky.png" id="1_pph0t"]
+[ext_resource type="PackedScene" uid="uid://vll005w0yas8" path="res://Assets/PolygonSciFiCity/Models/SM_Veh_Hover_Bike_01.gltf" id="2_3fagp"]
+[ext_resource type="PackedScene" uid="uid://cey4r20mely15" path="res://Assets/PolygonSciFiCity/Prefabs/Roads/SM_Env_Road_YellowLines_01_SF.prefab.scn" id="3_c1knw"]
+[ext_resource type="PackedScene" uid="uid://dpjjv56f30kkn" path="res://Assets/PolygonSciFiCity/Prefabs/Roads/SM_Env_Road_YellowLines_02_SF.prefab.scn" id="4_knt1c"]
+[ext_resource type="PackedScene" uid="uid://gi1ih6r2tlvi" path="res://Assets/PolygonSciFiCity/Prefabs/Environments/SM_Env_Sidewalk_Straight_01_SF.prefab.scn" id="5_jk2je"]
+[ext_resource type="PackedScene" uid="uid://ch6locy07lxlf" path="res://Assets/PolygonSciFiCity/Prefabs/Environments/SM_Env_Sidewalk_Straight_04_SF.prefab.scn" id="6_jasw6"]
+[ext_resource type="PackedScene" uid="uid://cpf3lm4r514a1" path="res://Assets/PolygonSciFiCity/Prefabs/Environments/SM_Env_Sidewalk_Straight_03_SF.prefab.scn" id="7_oktsl"]
+[ext_resource type="PackedScene" uid="uid://bs2hxh5hwpjjh" path="res://Assets/PolygonSciFiCity/Prefabs/Buildings/SM_Bld_Bank_01.prefab.scn" id="8_tvlil"]
+[ext_resource type="PackedScene" uid="uid://b0681gkp2kw28" path="res://Assets/PolygonSciFiCity/Prefabs/Environments/SkyDome.prefab.scn" id="9_1f3b3"]
+[ext_resource type="PackedScene" uid="uid://bwa45cpoktiww" path="res://Scenes/player.tscn" id="10_d5i3k"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_xaj82"]
+sky_top_color = Color(0.847059, 0.886275, 1, 1)
+sky_horizon_color = Color(0.3145, 0.328375, 0.37, 1)
+sky_curve = 4.32597
+sky_cover = ExtResource("1_pph0t")
+ground_bottom_color = Color(0.219608, 0.219608, 0.219608, 1)
+ground_horizon_color = Color(0.596078, 0.62549, 0.804902, 1)
+
+[sub_resource type="Sky" id="Sky_geesj"]
+sky_material = SubResource("ProceduralSkyMaterial_xaj82")
+
+[sub_resource type="Environment" id="Environment_h7af4"]
+background_mode = 2
+sky = SubResource("Sky_geesj")
+tonemap_mode = 2
+ssao_enabled = true
+sdfgi_enabled = true
+glow_enabled = true
+
+[node name="Node3D" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_h7af4")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.500003, -0.749999, 0.43301, 0, 0.499998, 0.866027, -0.866023, -0.433016, 0.250001, 5.93739, 0, 1.06044)
+light_color = Color(1, 1, 0.298039, 1)
+light_energy = 0.0
+shadow_enabled = true
+
+[node name="SM_Veh_Armored_Truck_01" parent="." instance=ExtResource("1_0uxci")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 13.3828, -2.34693e-07, 6.34358)
+
+[node name="SM_Veh_Hover_Bike_01" parent="." instance=ExtResource("2_3fagp")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.671621, 3.72529e-09, 9.6699)
+
+[node name="Roads" type="Node3D" parent="."]
+
+[node name="SM_Env_Road_YellowLines_01_SF" parent="Roads" instance=ExtResource("3_c1knw")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 5.93739, 0, 6.06044)
+
+[node name="SM_Env_Road_YellowLines_02_SF" parent="Roads" instance=ExtResource("4_knt1c")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 5.93739, 0, 1.06044)
+
+[node name="SM_Env_Road_YellowLines_01_SF2" parent="Roads" instance=ExtResource("3_c1knw")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.937391, 0, 6.06044)
+
+[node name="SM_Env_Road_YellowLines_02_SF2" parent="Roads" instance=ExtResource("4_knt1c")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.937, 0, 1.06)
+
+[node name="SM_Env_Road_YellowLines_01_SF3" parent="Roads" instance=ExtResource("3_c1knw")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4.06261, 0, 6.06044)
+
+[node name="SM_Env_Road_YellowLines_02_SF3" parent="Roads" instance=ExtResource("4_knt1c")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4.06261, 0, 1.06044)
+
+[node name="SM_Env_Road_YellowLines_01_SF4" parent="Roads" instance=ExtResource("3_c1knw")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -9.06261, 0, 6.06044)
+
+[node name="SM_Env_Road_YellowLines_02_SF4" parent="Roads" instance=ExtResource("4_knt1c")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -9.06261, 0, 1.06044)
+
+[node name="SM_Env_Road_YellowLines_01_SF5" parent="Roads" instance=ExtResource("3_c1knw")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10.9374, 0, 6.06044)
+
+[node name="SM_Env_Road_YellowLines_02_SF5" parent="Roads" instance=ExtResource("4_knt1c")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10.9374, 0, 1.06044)
+
+[node name="SM_Env_Road_YellowLines_01_SF6" parent="Roads" instance=ExtResource("3_c1knw")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 15.9374, 0, 6.06044)
+
+[node name="SM_Env_Road_YellowLines_02_SF6" parent="Roads" instance=ExtResource("4_knt1c")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 15.9374, 0, 1.06044)
+
+[node name="SM_Env_Sidewalk_Straight_01_SF" parent="." instance=ExtResource("5_jk2je")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.93739, 0, 1.06044)
+
+[node name="SM_Env_Sidewalk_Straight_01_SF3" parent="." instance=ExtResource("5_jk2je")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.06261, 0, 1.06044)
+
+[node name="SM_Env_Sidewalk_Straight_04_SF" parent="." instance=ExtResource("6_jasw6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.06261, 0, 1.06044)
+
+[node name="SM_Env_Sidewalk_Straight_03_SF" parent="." instance=ExtResource("7_oktsl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.937391, 0, 1.06044)
+
+[node name="SM_Bld_Bank_01" parent="." instance=ExtResource("8_tvlil")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -3.54999)
+
+[node name="SkyDome" parent="." instance=ExtResource("9_1f3b3")]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+
+[node name="Player" parent="." node_paths=PackedStringArray("CameraPivot") instance=ExtResource("10_d5i3k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9647, -2.34693e-07, 0.135177)
+CameraPivot = NodePath("../CameraPivot")
+
+[node name="CameraPivot" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9647, -2.34693e-07, 0.135177)
+
+[node name="Camera3D" type="Camera3D" parent="CameraPivot"]
+transform = Transform3D(1, 0, 0, 0, 0.5, 0.866025, 0, -0.866025, 0.5, 0, 5, 2)

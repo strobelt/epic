@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://bwa45cpoktiww"]
+
+[ext_resource type="PackedScene" uid="uid://bs6k3bjkumy57" path="res://Assets/PolygonSciFiCity/Prefabs/Characters/FixedScaleCharacters/Character_CyborgNinja_01_FixedScale.prefab.scn" id="1_5tkp3"]
+[ext_resource type="Script" path="res://Scripts/Player.cs" id="1_r2o7q"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_cmw3s"]
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_r2o7q")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.88, 0, 0, 0, 0.88, 0, 0, 0, 0.88, 0, 0.88, 0)
+shape = SubResource("CapsuleShape3D_cmw3s")
+
+[node name="CharacterShape" parent="." instance=ExtResource("1_5tkp3")]
